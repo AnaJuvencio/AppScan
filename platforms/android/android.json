@@ -50,6 +50,10 @@
             {
               "xml": "<feature name=\"Notification\"><param name=\"android-package\" value=\"org.apache.cordova.dialogs.Notification\" /></feature>",
               "count": 1
+            },
+            {
+              "xml": "<feature name=\"CDVOrientation\"><param name=\"android-package\" value=\"cordova.plugins.screenorientation.CDVOrientation\" /></feature>",
+              "count": 1
             }
           ]
         }
@@ -129,6 +133,12 @@
     },
     "cordova-plugin-dialogs": {
       "PACKAGE_NAME": "juv.Ana"
+    },
+    "es6-promise-plugin": {
+      "PACKAGE_NAME": "juv.Ana"
+    },
+    "cordova-plugin-screen-orientation": {
+      "PACKAGE_NAME": "juv.Ana"
     }
   },
   "dependent_plugins": {},
@@ -196,6 +206,20 @@
       "merges": [
         "navigator.notification"
       ]
+    },
+    {
+      "id": "es6-promise-plugin.Promise",
+      "file": "plugins/es6-promise-plugin/www/promise.js",
+      "pluginId": "es6-promise-plugin",
+      "runs": true
+    },
+    {
+      "id": "cordova-plugin-screen-orientation.screenorientation",
+      "file": "plugins/cordova-plugin-screen-orientation/www/screenorientation.js",
+      "pluginId": "cordova-plugin-screen-orientation",
+      "clobbers": [
+        "cordova.plugins.screenorientation"
+      ]
     }
   ],
   "plugin_metadata": {
@@ -206,6 +230,8 @@
     "cordova-plugin-ionic-webview": "4.2.1",
     "cordova-plugin-ionic-keyboard": "2.2.0",
     "cordova-plugin-qrscanner": "3.0.1",
-    "cordova-plugin-dialogs": "2.0.2"
+    "cordova-plugin-dialogs": "2.0.2",
+    "es6-promise-plugin": "4.2.2",
+    "cordova-plugin-screen-orientation": "3.0.2"
   }
 }
