@@ -511,7 +511,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var environment = {
       production: false,
       firebaseConfig: {
-        apiKey: "AIzaSyAPR85cvir2ESnvowRxx22q-owOtPRnqEI",
+        apiKey: "",
         authDomain: "leitorqrcodefirebase-f9e10.firebaseapp.com",
         databaseURL: "https://leitorqrcodefirebase-f9e10.firebaseio.com",
         projectId: "leitorqrcodefirebase-f9e10",
